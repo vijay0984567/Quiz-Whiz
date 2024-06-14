@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Whiz</title>
+</head>
+<body>
+    <div class="alert">Alert</div>
+    <div class="btn startBtn">Play Now</div>
+    <div class="btn createQuizBtn">Create Quiz</div>
+    <div class="container">
+        <h1>Quiz Whiz</h1>
+        <div class="question"></div>
+        <div class="choices"></div>
+        <button class="btn nextBtn">Next</button>
+        <div class="scoreCard"></div>
+        <div class="timer"></div>
+        <div class="feedback"></div>
+    </div>
+    <div class="createQuizContainer">
+        <h2>Create Quiz</h2>
+        <form id="quizForm">
+            <label for="question">Question:</label>
+            <input type="text" id="question" name="question" required>
+            <label for="option1">Option 1:</label>
+            <input type="text" id="option1" name="option1" required>
+            <label for="option2">Option 2:</label>
+            <input type="text" id="option2" name="option2" required>
+            <label for="option3">Option 3:</label>
+            <input type="text" id="option3" name="option3" required>
+            <label for="option4">Option 4:</label>
+            <input type="text" id="option4" name="option4" required>
+            <label for="answer">Correct Answer:</label>
+            <select id="answer" name="answer" required>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+            </select>
+            <button type="submit" class="btn submitBtn">Add Question</button>
+        </form>
+        <button class="btn finishBtn">Finish Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
